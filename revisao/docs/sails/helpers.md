@@ -73,3 +73,33 @@ Os _exits_ são as saídas do _helper_. Eles são definidos na propriedade `exit
 - *Caso de sucesso*: Ao chamar um auxiliar, se sua fn acionar `success`, ele retornará normalmente.
 - *Caso de erro*: Se sua `fn` acionar algum _exit_ diferente de `success`, então lançará um Erro (a menos que `.tolerate()` tenha sido usado).
 - *Caso de erro personalizado*: Quando necessário, você também pode expor outros exits personalizados (conhecidos como "exceptions"), permitindo que o código do usuário que chama o _handler_ lide com casos específicos e excepcionais.
+
+### _Helpers_  síncronos
+Se você não precisar de nada assíncrono, você pode simplesmente utilizar sem as palavras `async` e `await` e retornar um valor diretamente de `fn` e o Sails.js lidará com isso, utilizando a propriedade `sync: true`. Por exemplo:
+
+### Acessando `req` em um _helper_
+Se você precisar acessar o objeto `req` em um _helper_, você pode passá-lo como um argumento. A maneira mais simples de permitir que o código em sua ação passe `req` para seu _helper_ é definir um tipo de entrada: `ref`. Por exemplo:
+
+```javascript
+inputs: {
+
+  req: {
+    type: 'ref',
+    description: 'The current incoming request (req).',
+    required: true
+  }
+
+}
+```
+
+E para utilizá-lo, um exemplo seria:
+
+```javascript
+const headers = await sails.helpers.parseMyHeaders(req);
+```
+
+### Gerando _helpers_ automaticamente
+Se você deseja gerar _helpers_ automaticamente, você pode usar o comando `sails generate helper <nome-do-helper>`. Isso criará um arquivo _helper_ em `api/helpers/<nome-do-helper>.js` que pode ser acessado em qualquer lugar do seu código como `sails.helpers.<nome-do-helper>`. Isso criará o arquivo _helper_ com um esqueleto básico, que você pode preencher com a lógica necessária.
+
+### Conclusão
+Os _helpers_ são uma parte essencial do Sails.js e são extremamente úteis para tarefas repetitivas e comuns. Eles permitem que você encapsule a lógica de negócios em funções reutilizáveis e modulares, tornando seu código mais limpo e fácil de manter. Com a capacidade de definir parâmetros de entrada, saídas e exceções, os _helpers_ são uma ferramenta poderosa para qualquer desenvolvedor Sails.js.
