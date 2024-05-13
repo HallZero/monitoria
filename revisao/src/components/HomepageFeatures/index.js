@@ -4,32 +4,31 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Fácil de usar',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Todo o conteúdo é organizado de forma intuitiva e fácil de acessar.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Foque no conteúdo',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        A estrutura do site está organizada por tópicos, permitindo que você se
+        concentre no conteúdo.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Ferramenta de documentação',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        O docusaurus é uma ferramenta de documentação moderna e fácil de usar.
+        Quem sabe vocês não utilizam para documentar seus projetos nos próximos módulos?
       </>
     ),
   },
