@@ -18,3 +18,7 @@ Além disso, ele permite a construção de **APIs RESTful** de forma simples e e
 Sua ORM (Object-Relational Mapping) é o Waterline, que permite a integração com diversos **bancos de dados**, como MySQL, PostgreSQL, MongoDB, Redis, entre outros de uma forma simples.
 
 Entendeu agora o por quê de termos visto todos estes conceitos antes?
+
+<center>
+<img src="https://i.pinimg.com/originals/a4/7b/0b/a47b0b819f3b04c3ea9b7af0580ed165.gif" />
+</center>
