@@ -110,3 +110,6 @@ Se você deseja gerar _helpers_ automaticamente, você pode usar o comando `sail
 
 ### Conclusão
 Os _helpers_ são uma parte essencial do Sails.js e são extremamente úteis para tarefas repetitivas e comuns. Eles permitem que você encapsule a lógica de negócios em funções reutilizáveis e modulares, tornando seu código mais limpo e fácil de manter. Com a capacidade de definir parâmetros de entrada, saídas e exceções, os _helpers_ são uma ferramenta poderosa para qualquer desenvolvedor Sails.js.
+
+### Referências
+- [Documentação oficial do Sails.js - Helpers](https://sailsjs.com/documentation/concepts/helpers)
