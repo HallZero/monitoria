@@ -28,8 +28,8 @@ Um cliente pode ser comparado a um cliente em um restaurante. Assim como um clie
 
 O servidor é o responsável por armazenar e gerenciar os dados do sistema. Ele recebe as solicitações do cliente, processa essas solicitações e envia as respostas de volta ao cliente. O servidor pode ser um servidor web, um servidor de banco de dados ou um servidor de aplicativos.
 
+Um servidor pode ser comparado à cozinha de um restaurante. Assim como uma cozinha recebe os pedidos dos clientes, prepara os pratos solicitados e os envia para serem servidos nas mesas, um servidor recebe as solicitações dos clientes, processa essas solicitações e envia as respostas de volta aos clientes.
+
 ## Como funciona a comunicação entre cliente e servidor?
 
 A comunicação entre cliente e servidor é feita por meio de um protocolo de comunicação, como o HTTP (Hypertext Transfer Protocol). O cliente envia uma solicitação ao servidor, que processa essa solicitação e envia uma resposta de volta ao cliente. A resposta pode ser uma página da web, um arquivo, um dado ou qualquer outra informação.
-
-Um servidor pode ser comparado à cozinha de um restaurante. Assim como uma cozinha recebe os pedidos dos clientes, prepara os pratos solicitados e os envia para serem servidos nas mesas, um servidor recebe as solicitações dos clientes, processa essas solicitações e envia as respostas de volta aos clientes.
