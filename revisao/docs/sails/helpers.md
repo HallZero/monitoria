@@ -66,3 +66,10 @@ let formattedDate = await sails.helpers.formatDate.with({
   format: 'DD/MM/YYYY',
 });
 ```
+
+### Exits
+Os _exits_ são as saídas do _helper_. Eles são definidos na propriedade `exits` e todo _helper_ suporta as padrões `error` e `success`. No exemplo acima, temos apenas um _exit_ chamado `success`, que é a saída padrão de um _helper_ bem-sucedido. No entanto, você pode definir quantos _exits_ desejar, cada um com sua própria descrição.
+
+- *Caso de sucesso*: Ao chamar um auxiliar, se sua fn acionar `success`, ele retornará normalmente.
+- *Caso de erro*: Se sua `fn` acionar algum _exit_ diferente de `success`, então lançará um Erro (a menos que `.tolerate()` tenha sido usado).
+- *Caso de erro personalizado*: Quando necessário, você também pode expor outros exits personalizados (conhecidos como "exceptions"), permitindo que o código do usuário que chama o _handler_ lide com casos específicos e excepcionais.
