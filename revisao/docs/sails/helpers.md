@@ -1,6 +1,6 @@
 ---
-title: Helpers no Sails.js
-order: 2
+title: Helpers - Funções auxiliares
+sidebar_position: 3
 ---
 
 # O que são _helpers_?
