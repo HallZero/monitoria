@@ -8,6 +8,13 @@ Helpers são funções que podem ser chamadas em qualquer lugar do código, e qu
 
 Helpers são realmente convenientes, pois com eles, você pode executar ações, respostas personalizadas, scripts de linha de comando, testes unitários e outros helpers.
 
+## Vídeo guia do professor Afonso Brandão
+<center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZnqUzHJ3bEM" title="Helpers no Sails" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+
 # Como criar um _helper_?
 
 Para criar um _helper_, basta criar um arquivo na pasta `api/helpers/` com o nome do _helper_ que você deseja criar. Por exemplo, se você deseja criar um _helper_ chamado `formatDate`, crie um arquivo chamado `formatDate.js` na pasta `api/helpers/`, como no exemplo abaixo:
