@@ -1,6 +1,6 @@
 ---
 title: Helpers no Sails.js
-order: 1
+order: 2
 ---
 
 # O que são _helpers_?
