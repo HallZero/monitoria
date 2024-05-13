@@ -44,12 +44,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd docs
+          cd revisao
           npm ci
 
       - name: Build project
         run: |
-          cd docs
+          cd revisao
           npm run build
           mv build ../build
 
