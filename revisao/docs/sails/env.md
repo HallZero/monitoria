@@ -70,11 +70,19 @@ Configurações especificados nestes arquivos geralmente estarão disponíveis e
 
     - Quaisquer arquivos salvos na pasta `/config/env/<nome-do-ambiente>` serão carregados somente quando o Sails for lançado no ambiente `<nome-do-ambiente>`. Por exemplo, arquivos salvos em config/env/production só serão carregados quando o Sails estiver em modo de produção.
 
-    :::tip
-    
-    Enquanto estamos construindo o projeto, estamos no ambiente de desenvolvimento, então recomendo que as configurações carregadas são as do arquivo `config/env/development.js`.
-    
-    :::
+  :::tip
+  
+  Enquanto estamos construindo o projeto, estamos no ambiente de desenvolvimento, então recomendo que as configurações carregadas são as do arquivo `config/env/development.js`.
+  
+  :::
+
+### Video de apoio
+
+Neste vídeo, há uma explicação bem interessante sobre como funciona a estrutura de pastas do Sails.js e, em especial, sobre a pasta `config/`. Apesar do sotaque carregado do instrutor 😅, o conteúdo é bem didático e vale a pena assistir. Este vídeo faz parte de uma playlist ensinando diversos conteúdos de Sails.js. 
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yQFt2VlBvqQ" title="LESSON 3 - Understanding Sails Directory Structure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
 
 Lembrando que este material é apenas de apoio. Recomendo fazer a leitura da documentação original no [guia oficial do Sails.js](https://sailsjs.com/documentation/concepts/configuration).
     
