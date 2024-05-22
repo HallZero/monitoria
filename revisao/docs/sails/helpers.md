@@ -17,10 +17,16 @@ Helpers são realmente convenientes, pois com eles, você pode executar ações,
 
 # Como criar um _helper_?
 
-Para criar um _helper_, basta criar um arquivo na pasta `api/helpers/` com o nome do _helper_ que você deseja criar. Por exemplo, se você deseja criar um _helper_ chamado `formatDate`, crie um arquivo chamado `formatDate.js` na pasta `api/helpers/`, como no exemplo abaixo:
+Para criar um _helper_, basta criar um arquivo na pasta `api/helpers/` com o nome do _helper_ que você deseja criar. Por exemplo, se você deseja criar um _helper_ chamado `format-date`, crie um arquivo chamado `format-date.js` na pasta `api/helpers/`, como no exemplo abaixo:
+
+:::tip
+
+  Cuidado na hora de criar seus helpers. O sails é meio chato em relação ao nome do arquivo no qual as funções estão. Se você criar um arquivo com o nome `formatDate.js` e tentar chamar a função `sails.helpers.formatDate()`, o sails não vai encontrar o arquivo. Isso porque o sails espera que o nome do arquivo seja `format-date.js`.
+
+:::
 
 ```javascript
-// api/helpers/formatDate.js
+// api/helpers/format-date.js
 module.exports = {
   friendlyName: 'Format date',
   description: 'Format a date to a specific format',
